@@ -2,8 +2,22 @@ package com.code_remote.classes.class1
 
 fun main(args: Array<String>) {
 
-    val word: String = "what ever"
     val numberDecimal: Double = 5432.09
+
+
+    val iWantToWriteWhatIRememberToBe = true
+    if(iWantToWriteWhatIRememberToBe){
+        //run this code
+    }
+
+    if(1+3==4){
+        //run this code
+    }
+
+    if(!iWantToWriteWhatIRememberToBe){
+        //Run this code if it's not true
+    }
+
 
     println("Enter a number?")
     var number = readLine()!!.toInt()

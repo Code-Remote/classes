@@ -13,8 +13,11 @@ fun main(args: Array<String>){
 
     //number = 3
 
-    var changableWord = "I was a word"
+    var changableWord = "I was a specific string of characters"
+
     println(changableWord)
-    changableWord = "Now i'm something else"
+
+    changableWord = "Now i'm a different string of characters"
+
     println(changableWord)
 }
