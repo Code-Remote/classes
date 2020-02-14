@@ -24,7 +24,8 @@ class Quote(val text: String, val author: String = "Unknown", isFromBook:Boolean
 
 fun main(args: Array<String>) {
 
-    val simpoleQuoateObject = SimpleStaticQuoate()
+    val simpleQuoateObject = SimpleStaticQuoate()
+    simpleQuoateObject.author
 
     val myFirsQuote = Quote("Love is a verb. Love — the feeling — is a fruit of love, the verb.")
 
