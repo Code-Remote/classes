@@ -31,7 +31,10 @@ fun main(args: Array<String>) {
     }
 
     when {
-        number > numberDecimal -> println("You entered a Higher number")
+        number > numberDecimal -> {
+            println("You entered a Higher number")
+            //for multiple lines
+        }
         number < 100 -> println("You entered a Lower then 100 number")
         else -> println("Probably between $numberDecimal and 100")
 

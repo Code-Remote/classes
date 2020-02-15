@@ -9,29 +9,46 @@ class SimpleStaticQuoate{
     val author = "Evert"
 }
 
-//Constructor is to pass down parameters to construct the class
-class Quote(val text: String, val author: String = "Unknown", isFromBook:Boolean = false){
+fun main() {
+    val quote = Quote("what ever you stay the same", "Evert")
+    val text = quote.displayQuoate().length
 
-    init{
-        //construct block
-        println(isFromBook)
+}
+class Quote(private val text: String, private val author: String){
+    //inside here is the blueprint of the Quoate class structure
+    fun displayQuoate() : String{
+        return text
     }
 
-    fun displayBeutifulQuoate(){
-        println("\"$text\" - $author")
-    }
+
 }
 
-fun main(args: Array<String>) {
+//
+//
+//// Normally you would put one class in a file
+//// Constructor is to pass down parameters to construct the class
+//class Quote(val text: String, val author: String = "Unknown", isFromBook:Boolean = false){
+//
+//    init{
+//        //construct block
+//        println(isFromBook)
+//    }
+//
+//    fun displayBeutifulQuoate(){
+//        println("\"$text\" - $author")
+//    }
+//}
 
-    val simpleQuoateObject = SimpleStaticQuoate()
-    simpleQuoateObject.author
-
-    val myFirsQuote = Quote("Love is a verb. Love — the feeling — is a fruit of love, the verb.")
-
-    println(myFirsQuote)
-
-    println(myFirsQuote.text)
-
-    println(myFirsQuote.displayBeutifulQuoate())
-}
+//fun main(args: Array<String>) {
+//
+//    val simpleQuoateObject = SimpleStaticQuoate()
+//    simpleQuoateObject.author
+//
+//    val myFirsQuote = Quote("Love is a verb. Love — the feeling — is a fruit of love, the verb.")
+//
+//    println(myFirsQuote)
+//
+//    println(myFirsQuote.text)
+//
+//    println(myFirsQuote.displayBeutifulQuoate())
+//}

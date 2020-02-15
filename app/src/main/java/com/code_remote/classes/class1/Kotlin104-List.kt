@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
     val friendOfMyFriendsName = "Lars"
 
     val friends = listOf(myName, yourName, myGirlFriend, friendOfMyFriendsName)
+    //In Coding we start counting at 0
     println(friends[0])
 
 
