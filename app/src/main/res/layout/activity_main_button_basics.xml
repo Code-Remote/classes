@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".doug.MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/counter_text"
@@ -12,9 +10,12 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/counter_button"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Add count"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/counter_text" />
 
@@ -34,11 +36,24 @@
         android:layout_marginEnd="32dp"
 
         android:text="to List"
-        app:layout_constraintBottom_toTopOf="@+id/to_quotes_button"
+        app:layout_constraintBottom_toTopOf="@+id/to_resources"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/counter_button" />
+
+    <Button
+        android:id="@+id/to_resources"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="to Resources"
+        app:layout_constraintBottom_toTopOf="@+id/to_quotes_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_list_button" />
 
     <Button
         android:id="@+id/to_quotes_button"
@@ -46,13 +61,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:text="To quotes"
         android:onClick="goToQuotesClickListenerViaLayoutXml"
+        android:text="To quotes"
         app:layout_constraintBottom_toTopOf="@+id/to_better_quotes_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_list_button" />
+        app:layout_constraintTop_toBottomOf="@+id/to_resources" />
 
     <Button
         android:id="@+id/to_better_quotes_button"

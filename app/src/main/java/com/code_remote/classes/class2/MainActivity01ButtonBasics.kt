@@ -22,6 +22,12 @@ class MainActivity01ButtonBasics : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_button_basics)
 
+        to_resources.setOnClickListener {
+            val intent = Intent(this, MainActivity01Resources::class.java)
+            startActivity(intent)
+        }
+
+
         setCounterClickListenerByKotlinSynthetic()
         setGoToListClickListenerByCodeFindViewByID()
         setGoToStorageClickListenerByLazyInit()

@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".class2.MainActivity01Resources" />
         <activity android:name=".class2.MainActivity01ButtonBasics" />
         <activity android:name=".class2.MainActivity02SimpleQuotes" />
         <activity android:name=".class2.MainActivity03BetterQuotes" />
