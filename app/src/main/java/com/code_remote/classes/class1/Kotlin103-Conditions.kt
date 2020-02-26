@@ -10,14 +10,15 @@ fun main(args: Array<String>) {
         //run this code
     }
 
-    if(1+3==4){
-        //run this code
-    }
-
     if(!iWantToWriteWhatIRememberToBe){
-        //Run this code if it's not true
+        //Run this code if it's '!' not true. With '!' you negate the statement
     }
 
+    if(1+3==4){
+        //run this code if the statement is true
+    }else{
+        //run if the statement would not be true
+    }
 
     println("Enter a number?")
     var number = readLine()!!.toInt()
